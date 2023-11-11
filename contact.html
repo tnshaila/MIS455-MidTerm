@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./images/shoes.png" alt="Logo"></a>
+        </div>
+        <div class="logotxt">SneakPeak</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="search-box">
+                <input id="searchInput" type="text" placeholder="Search...">
+                <button id="searchButton" type="submit">Search</button>
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="contain">
+
+        <div class="wrapper">
+      
+          <div class="form">
+            <h4>GET IN TOUCH</h4>
+            <h2 class="form-headline">Send us a message</h2>
+            <form id="submit-form" action="">
+              <p>
+                <input id="name" class="form-input" type="text" placeholder="Your Name*">
+              </p>
+              <p>
+                <input id="email" class="form-input" type="email" placeholder="Your Email*">
+              </p>
+              <p class="full-width">
+                <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+              </p>
+              <p class="full-width">
+                <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+              </p>
+              <p class="full-width">
+                <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about New Apparels.
+              </p>
+              <p class="full-width">
+                <button type="submit" class="submit-btn" value="Submit" onclick="message()">
+                    Submit </button><br><br>
+              </p>
+            </form>
+          </div>
+
+          <div id="message">
+
+            <h1>S</h1>
+
+          </div>
+        </div>
+      </div>
+
+    <section class="footer">
+        <div class="social">
+            <a href="https://facebook.com/" ><img src="./images/facebook.png" alt="" class="fIcon"></a>
+            <a href="https://instagram.com/"><img src="./images/instagram.png" alt="" class="fIcon"> </a>
+            <a href="https://twitter.com/"><img src="./images/twitter.png" alt="" class="fIcon"></a>
+        </div>
+        <div class="credit">All Rights Reserved by SneakPeak</div>
+    </section>
+    <script src="contact.js"></script>
+    
+</body>
+</html>
