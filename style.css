@@ -1,0 +1,90 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #000324;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logotxt {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-right: 800px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e100ff; 
+    /* border-bottom:solid 2px #FFA500; */
+}
+.logo img {
+    width: 40px;
+}
+
+.search-box {
+    display: flex;
+}
+
+#searchInput {
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+}
+
+#searchButton {
+    background-color: #e100ff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+button {
+    background-color: #e100ff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #6f117b; 
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #000324;
+    font-weight: bolder;
+}
