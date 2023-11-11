@@ -84,17 +84,76 @@ button {
     background-color: #6f117b; 
 }
 
-h1{
+
+
+.slider {
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+  }
+  
+
+  
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .sliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .sliderImg {
+    z-index: 1;
+  }
+  
+  .sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    color: #000324;
-    font-weight: bolder;
-}
-
-
-.features {
+    color: white;
+    z-index: 1;
+  }
+  
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+  .buyButton {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .features {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,107 +184,76 @@ h1{
     height: 100px;
   }
   
-  .gallery {
+  .product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  productImg {
+    width: 50%;
+  }
+  
+  .productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
     padding: 50px;
+  }
+  
+  .productTitle {
+    font-size: 75px;
+    font-weight: 900;
+  }
+  
+  .productDesc {
+    font-style: 24px;
+    color: gray;
+  }
+  
+  .colors,
+  .sizes {
     display: flex;
+    margin-bottom: 20px;
   }
   
-  .galleryItem {
-    flex: 1;
-    padding: 50px;
+  .color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
   }
   
-  .galleryImg {
-    width: 100%;
+  .color:last-child {
+    background-color: darkblue;
   }
   
-  .newSeason {
-    display: flex;
+  .size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
   }
   
-  .nsItem {
-    flex: 1;
-    background-color: #bb75c6;
+  .productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .nsImg {
-    width: 100%;
-    height: 500px;
-  }
-  
-  .nsTitle {
-    font-size: 40px;
-  }
-  
-  .nsButton {
-    padding: 15px;
     font-weight: 600;
     cursor: pointer;
   }
   
-  /* footer {
-    display: flex;
-    background-color: #1e0127;
-  }
-  
-  .footerLeft {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-  }
-  
-  .fMenuTitle {
-    font-size: 15px;
-    color: floralwhite;
-    padding-bottom: 0px;
-  }
-  
-  .fList {
-    padding-left: 20px;
-    list-style: none;
-  }
-  
-  .fListItem {
-    margin-bottom: 10px;
-    color: gray;
-    cursor: pointer;
-  }
-    
-  .fInput {
-    padding: 5px;
-  }
-  
-  .fButton {
-    padding: 5px;
-    background-color: rgb(244, 238, 238);
-    color: rgb(191, 11, 11);
-  }
-  
-  .fIcons{
-    display: flex;
-  }
-  
-  .fIcon{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  .copyright{
-    font-weight: 300;
-    font-size: 14px;
-    padding-top: 50px;
-  }*/
+  .productButton:hover {
+    background-color: white;
+    color: black;
+  }  
 
-
-  .footer
+.footer
     {
         background-color: #1e0127;
         text-align: center;
@@ -375,10 +403,4 @@ h1{
       width: 90%;
       align-items: center;
       background-color: rgb(210, 8, 8);
-    }
-  
-    .payment{
-      width: 90%;
-      padding: 20px;
-    }
-  }  
+    }}
